@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.img-product{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  
+}
+.text-main{
+  color: #000000;
+  font-weight: bolder;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.active{
+  color: azure;
+  font-weight: bolder;
+
 }
+.pragraph{
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow-y: clip;
+    -webkit-box-orient: vertical;
+}
+/* From Uiverse.io by mrhyddenn */ 
+
+
+.card_box {
+ 
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(194, 192, 192, 0.623) 0%, rgb(168, 168, 168) 100%);
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.55);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.card_box:hover {
+  transform: scale(.9);
+}
+
+.card_box span {
+  position: absolute;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box span::before {
+  content: 'sale';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ffffff 0%, #adaca9  51%, #2a2a2a  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+.card_box span::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #616060;
+  background-image: linear-gradient(45deg, #b3b3b3 0%, #e2e2e2  51%, #dbdbdb  100%);
+}
+.update{
+  z-index: 99999;
+}
+
+.loader {
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-bottom: 8px;
+  background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+  animation: l2 2s linear infinite;
+}
+.loader:before {
+  content:"Loading..."
+
+}
+@keyframes l2 {to{background-size: 100% 3px}}
