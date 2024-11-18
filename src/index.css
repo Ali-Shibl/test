@@ -79,9 +79,17 @@
   background-image: linear-gradient(45deg, #b3b3b3 0%, #e2e2e2  51%, #dbdbdb  100%);
 }
 .update{
+
   z-index: 99999;
 }
-
+.form{
+  width: 50%;
+}
+@media screen and (max-width:768px) {
+  .form{
+    width: 80%;
+  }
+}
 .loader {
   width: fit-content;
   margin: auto;

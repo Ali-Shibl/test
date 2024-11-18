@@ -83,7 +83,7 @@ export default function Home() {
       {isloading ? <div className="loader my-5"></div>
 
         :
-        <div className="row g-0 row-gap-3 g-md-4">
+        <div className="row g-3 g-md-4">
           {products.map((product) => (
             <div key={product.id} className="col-md-4 col-lg-3 col-sm-6 product">
 

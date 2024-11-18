@@ -43,7 +43,7 @@ async function getProduct(productId) {
 
 
 :
-<div className="row g-5 py-4">
+<div className="row g-2 g-md-5 py-3">
   <div className="col-md-4">
   <Carousel  showStatus={false} autoPlay={true} infiniteLoop={true}>
   {product?.images?.map((img,index)=><div key={index}>
@@ -56,7 +56,7 @@ async function getProduct(productId) {
 
 
   </div>
-  <div className="col-md-8 mt-5 mt-md-0">
+  <div className="col-md-8 mt-3 mt-md-0">
     <h1 className='h4 mb-4'>{product?.title}</h1>
     <h2 className='h6 text-muted my-2'><span className='text-main'>Price :</span>  {product?.price}</h2>
     

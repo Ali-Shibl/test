@@ -3,7 +3,7 @@ import React from 'react'
 export default function FormUpdata({ProductUpdata,updataProduct,setShowFormUpdata,handleInputChange}) {
   return (
     <div className="position-fixed update top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center bg-black bg-opacity-50">
-                <div className="p-3 w-50 bg-white">
+                <div className="p-3 form bg-white rounded-2">
                   <input 
                     type="text" 
                     name="title" 
